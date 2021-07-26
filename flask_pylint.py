@@ -19,8 +19,6 @@ class Pylint:
 
         if 'PYLINT_DISABLE' in app.config:
             self._disable = app.config.get('PYLINT_DISABLE')
-        else:
-            self._disable = not app.config.get('DEBUG', True)
 
         if self._disable:
             return self
