@@ -1,0 +1,11 @@
+repos:
+- repo: https://github.com/pre-commit/mirrors-pylint
+  rev: v2.7.4
+  hooks:
+  - id: pylint
+    args:
+    - --score=y
+    - --disable=C0103,C0114,C0115,C0116,E0401,R0903,R1722,W0105,W0108,W0401,W0614
+    - --ignore=docker,venv
+    - --fail-under=9.3
+    - --max-line-length=120
