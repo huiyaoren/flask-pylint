@@ -20,4 +20,4 @@ pylint = Pylint(app)
 
 ## 配置
 
-`PYLINT_DISABLE`  disable pylint check if value is `True`
+`PYLINT_DISABLE`: 当值为 `True` 时关闭 pylint 代码检查
